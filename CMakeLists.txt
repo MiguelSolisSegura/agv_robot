@@ -18,8 +18,13 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
 )
 
-add_executable(${PROJECT_NAME}_node src/${PROJECT_NAME}_main.cpp src/${PROJECT_NAME}_class.cpp)
-add_executable(agv_${PROJECT_NAME}_node src/agv_${PROJECT_NAME}_main.cpp src/agv_${PROJECT_NAME}_class.cpp src/${PROJECT_NAME}_class.cpp)
+add_executable(${PROJECT_NAME}_node src/${PROJECT_NAME}_main.cpp 
+									src/${PROJECT_NAME}_class.cpp)
+									
+add_executable(agv_${PROJECT_NAME}_node src/agv_${PROJECT_NAME}_main.cpp 
+										src/agv_${PROJECT_NAME}_class.cpp 
+										src/${PROJECT_NAME}_class.cpp 
+										src/hydraulic_system_monitor.cpp)
 
 target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})
 target_link_libraries(agv_${PROJECT_NAME}_node ${catkin_LIBRARIES})
