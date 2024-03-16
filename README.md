@@ -20,7 +20,7 @@ The `robot_info` package is designed for ROS (Robot Operating System) and is a c
    ```
 2. Clone the `robot_info` package:
    ```sh
-   git clone https://github.com/your_username/robot_info.git
+   git clone https://github.com/MiguelSolisSegura/robot_info.git
    ```
 3. Compile the package:
    ```sh
